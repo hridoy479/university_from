@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo code</title>
+    <style>
+      .placeholder-opacity-50::-moz-placeholder {
+        opacity: 0.5;
+      }
+.placeholder-opacity-50::placeholder {
+        opacity: 0.5;
+      }
+    </style>
+  <script type="module" crossorigin src="/assets/index-BhRCJO-9.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DnH0hPcx.css">
+</head>
+<body class="">
+  <!--
+    <div class="relative">
+        <img src="" alt="Image" class="w-full">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-white text-lg font-bold">Overlay Content</p>
+        </div>
+      </div>
+    -->
+      
+    <!--<button id="btn" class="bg-[#66B032] text-white  block p-1 mx-auto my-10 hover:bg-gray-400 hover:text-black uppercase">Roll Dice</button>
+    <img src="image/image1.jpg" class="block mx-auto w-40 mt-40" alt="" id="image">  
+    -->
+    <header class="bg-[#2094FFC4] w-full h-[80px] flex flex-row gap-20" id="header">
+      <div id="logo">
+        <img class="w-16 lg:mx-10 mt-3 rounded-md ml-5" src="/assets/NPI%20University%20of%20Bangladesh%20(NPIUB)%20Logo%201-CXZx7kpd.png">
+      </div>
+      <div id="htext">
+        <h1 class="lg:text-3xl lg:mx-20  lg:text-center text-xl md:text-[25px] md:mt-4 font-bold text-white  lg:flex">North Pacific International University of Bangladesh</h1>
+        
+      </div>
+      <div class="lg:flex flex-col hidden">
+        <input type="color" class="w-10 h-5 mr-5 mt-5 border-2" id="col-picker">
+        <button class="bg-blue-500 hover:bg-blue-300 w-10 mt-1 uppercase text-center border-2 font-semibold" id="col_ok">Ok</button>
+      </div>
+
+    </header>
+
+    <section class="flex flex-col lg:flex-row lg:gap-52 md:flex-row md:gap-20 mx-auto">
+    
+    <div class="bg-[#75A4FF29] w-full h-40 md:w-[252px] md:h-[644px] rounded-md lg:mt-10 lg:ml-20 md:mt-10">
+       <p class="text-[#2094FFE3] text-center text-[20px] font-arial mt-2 font-semibold">Service Sector</p>
+       <div class="flex flex-row gap-10 justify-around mt-12 md:flex-col md:ml-3 md:gap-5">
+        <button id="int-btn" class="category-button bg-green-400 w-48 h-10 rounded-md mx-auto text-[#003C74] font-semibold  hover:bg-gray-200 drop-shadow-md text-center" data-category="internals">Forms For Internals</button>
+        <button id="std-btn" class="category-button bg-blue-200 w-48 h-10 rounded-md mx-auto text-[#003C74] font-semibold hover:bg-gray-200 drop-shadow-md text-center" data-category="students">Forms For Students</button>
+       </div>
+    </div>
+
+    <div class="bg-[#75A4FF29] w-full md:w-[586px] h-min-96 mt-10 rounded-[12px] flex flex-col">
+      <div class="flex flex-row justify-between mx-5 mt-2">
+        <h1 class="text-[#2094FFE3] font-bold ">Service By Service Sector</h1>
+        <div id="arrow" class="flex flex-row gap-2">
+          <i class="fa fa-arrow-circle-o-left text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
+          <i class="fa fa-arrow-circle-o-right text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
+        </div>
+
+
+
+
+
+
+      </div>
+
+      
+        <div class="relative">
+          <input type="text" id="search-items" class="w-[90%] pl-10 pr-3 py-1 mt-2 ml-7 mx-auto border rounded-full" placeholder="Search here">
+          <i class="fas fa-search absolute  top-6 right-10 transform -translate-y-1/2 text-gray-400"></i>
+          
+        </div>
+        <div class="bg-[#D6DCE0] flex mt-5 p-1 justify-center w-full mx-auto">
+          <h1 id="formName" class="capitalize text-[#021145] font-bold text-2xl">Forms For Students</h1>
+        </div>
+
+        <div class="flex flex-row justify-between bg-gray-400 w-full mx-auto mt-2 p-1">
+          <p class="uppercase">S.L<span class="border-r border-gray-500 h-6 ml-2"></span></p>
+          <p class="uppercase">Name of Form</p>
+          <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span>pdf</p>
+        </div>
+        <div class="flex flex-col">
+
+        <div class="post flex flex-row justify-between bg-[#D6DCE0] w-full mx-auto mt-4 p-2 hover:border-2 hover:border-sky-400 " data-category="students">
+          <p class="uppercase">01<span class="border-r border-gray-500 h-6 ml-2"></span></p>
+          <p class="uppercase">Name of Form for students</p>
+          <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
+        </div>
+
+        <div class="post flex flex-row justify-between bg-[#D6DCE0] w-full mx-auto mt-4 p-2 hover:border-2 hover:border-sky-400 " data-category="internals">
+          <p class="uppercase">01<span class="border-r border-gray-500 h-6 ml-2"></span></p>
+          <p class="uppercase">Name of Form for internals</p>
+          <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
+        </div>
+        <div class="post flex flex-row justify-between bg-[#D6DCE0] w-full mx-auto mt-4 p-2 hover:border-2 hover:border-sky-400 " data-category="internals">
+          <p class="uppercase">01<span class="border-r border-gray-500 h-6 ml-2"></span></p>
+          <p class="uppercase">Hridoy Molla</p>
+          <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
+        </div>
+        <div class="post flex flex-row justify-between bg-[#D6DCE0] w-full mx-auto mt-4 p-2 hover:border-2 hover:border-sky-400 " data-category="internals">
+          <p class="uppercase">01<span class="border-r border-gray-500 h-6 ml-2"></span></p>
+          <p class="uppercase">Akib</p>
+          <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
+        </div>
+        <div class="post flex flex-row justify-between bg-[#D6DCE0] w-full mx-auto mt-4 p-2 hover:border-2 hover:border-sky-400 " data-category="students">
+          <p class="uppercase">01<span class="border-r border-gray-500 h-6 ml-2"></span></p>
+          <p class="uppercase">Forhad</p>
+          <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/e111a57329.js" crossorigin="anonymous"></script>
+</body>
+</html>
