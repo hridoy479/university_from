@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="!scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,8 @@
         opacity: 0.5;
       }
     </style>
-  <script type="module" crossorigin src="/assets/index-BhRCJO-9.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DnH0hPcx.css">
+  <script type="module" crossorigin src="/assets/index-DXdcYoA-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Daw_vZNA.css">
 </head>
 <body class="">
   <!--
@@ -31,11 +31,11 @@
     -->
     <header class="bg-[#2094FFC4] w-full h-[80px] flex flex-row gap-20" id="header">
       <div id="logo">
-        <img class="w-16 lg:mx-10 mt-3 rounded-md ml-5" src="/assets/NPI%20University%20of%20Bangladesh%20(NPIUB)%20Logo%201-CXZx7kpd.png">
+        <img class="lg:w-16 w-16 lg:mx-10 mt-3 rounded-md ml-5" src="/assets/NPI%20University%20of%20Bangladesh%20(NPIUB)%20Logo%201-CXZx7kpd.png">
       </div>
       <div id="htext">
-        <h1 class="lg:text-3xl lg:mx-20  lg:text-center text-xl md:text-[25px] md:mt-4 font-bold text-white  lg:flex">North Pacific International University of Bangladesh</h1>
-        
+        <h1 class="lg:text-3xl lg:mx-20 hidden lg:text-center text-[20px] md:text-[25px] md:mt-4 font-bold text-white  lg:flex">North Pacific International University of Bangladesh</h1>
+        <h1 class="lg:text-3xl lg:mx-20  lg:text-center text-4xl md:text-[25px] mt-5 md:mt-4 font-bold text-white  lg:hidden">NPIUB</h1>
       </div>
       <div class="lg:flex flex-col hidden">
         <input type="color" class="w-10 h-5 mr-5 mt-5 border-2" id="col-picker">
@@ -48,9 +48,9 @@
     
     <div class="bg-[#75A4FF29] w-full h-40 md:w-[252px] md:h-[644px] rounded-md lg:mt-10 lg:ml-20 md:mt-10">
        <p class="text-[#2094FFE3] text-center text-[20px] font-arial mt-2 font-semibold">Service Sector</p>
-       <div class="flex flex-row gap-10 justify-around mt-12 md:flex-col md:ml-3 md:gap-5">
-        <button id="int-btn" class="category-button bg-green-400 w-48 h-10 rounded-md mx-auto text-[#003C74] font-semibold  hover:bg-gray-200 drop-shadow-md text-center" data-category="internals">Forms For Internals</button>
-        <button id="std-btn" class="category-button bg-blue-200 w-48 h-10 rounded-md mx-auto text-[#003C74] font-semibold hover:bg-gray-200 drop-shadow-md text-center" data-category="students">Forms For Students</button>
+       <div class="flex flex-row gap-10 justify-around mt-12 md:flex-col md:gap-5">
+        <button id="int-btn" class="category-button bg-green-400 lg:w-48 w-40 h-10 rounded-md mx-auto text-[#003C74] font-semibold  hover:bg-gray-200 drop-shadow-md text-center" data-category="internals">Forms For Internals</button>
+        <button id="std-btn" class="category-button bg-blue-200 lg:w-48 w-40 h-10 rounded-md mx-auto text-[#003C74] font-semibold hover:bg-gray-200 drop-shadow-md text-center" data-category="students">Forms For Students</button>
        </div>
     </div>
 
@@ -58,8 +58,8 @@
       <div class="flex flex-row justify-between mx-5 mt-2">
         <h1 class="text-[#2094FFE3] font-bold ">Service By Service Sector</h1>
         <div id="arrow" class="flex flex-row gap-2">
-          <i class="fa fa-arrow-circle-o-left text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
-          <i class="fa fa-arrow-circle-o-right text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
+          <i id="arrow1" class="fa fa-arrow-circle-o-left text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
+          <i id="arrow2" class="fa fa-arrow-circle-o-right text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
         </div>
 
 
@@ -72,7 +72,7 @@
       
         <div class="relative">
           <input type="text" id="search-items" class="w-[90%] pl-10 pr-3 py-1 mt-2 ml-7 mx-auto border rounded-full" placeholder="Search here">
-          <i class="fas fa-search absolute  top-6 right-10 transform -translate-y-1/2 text-gray-400"></i>
+          <i class="fas fa-search absolute  top-6 right-10 transform -translate-y-1/2 text-gray-400 cursor-pointer" id="search_btn"></i>
           
         </div>
         <div class="bg-[#D6DCE0] flex mt-5 p-1 justify-center w-full mx-auto">
@@ -89,7 +89,7 @@
         <div class="post flex flex-row justify-between bg-[#D6DCE0] w-full mx-auto mt-4 p-2 hover:border-2 hover:border-sky-400 " data-category="students">
           <p class="uppercase">01<span class="border-r border-gray-500 h-6 ml-2"></span></p>
           <p class="uppercase">Name of Form for students</p>
-          <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
+          <p class="uppercase" id="dwn_pdf"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
         </div>
 
         <div class="post flex flex-row justify-between bg-[#D6DCE0] w-full mx-auto mt-4 p-2 hover:border-2 hover:border-sky-400 " data-category="internals">
@@ -112,9 +112,12 @@
           <p class="uppercase">Forhad</p>
           <p class="uppercase"><span class="border-r border-gray-500 h-6 mr-2"></span><i class="fa-solid fa-download cursor-pointer"></i></p>
         </div>
-
+        <div class="bg-green-400 w-full h-20 rounded-md hidden" id="not-found" >
+          <h1 class="text-red-900 text-center text-4xl font-semibold mt-5 uppercase">Not found</h1>
+        <!--  <p class="text-red-800 text-center">Serach Other keyword <br> Or name of Form</p>-->
         </div>
-    </div>
+        </div>
+  
     </section>
 
     <script src="https://kit.fontawesome.com/e111a57329.js" crossorigin="anonymous"></script>
