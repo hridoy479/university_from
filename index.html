@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPI University Form</title>
-
+    <title>Ludo code</title>
     <style>
-      .placeholder-opacity-50::-moz-placeholder {
+    .placeholder-opacity-50::-moz-placeholder {
         opacity: 0.5;
-      }
-      .placeholder-opacity-50::placeholder {
+    }
+    .placeholder-opacity-50::placeholder {
         opacity: 0.5;
-      }
-      .custom-scrollbar::-webkit-scrollbar {
+    }
+    .custom-scrollbar::-webkit-scrollbar {
     width: 12px;
     height: 12px;
   }
@@ -24,10 +23,10 @@
     background-color: #EDF2F7;
   }
     </style>
-  <script type="module" crossorigin src="./assets/index-DeLqHZvq.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DJHj4NIA.css">
+  <script type="module" crossorigin src="/assets/index-DXIKIdQ5.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CjX4jTVv.css">
 </head>
-<body class="">
+<body class="dark:bg-gray-800">
   <!--
     <div class="relative">
         <img src="" alt="Image" class="w-full">
@@ -41,13 +40,13 @@
     <!--<button id="btn" class="bg-[#66B032] text-white  block p-1 mx-auto my-10 hover:bg-gray-400 hover:text-black uppercase">Roll Dice</button>
     <img src="image/image1.jpg" class="block mx-auto w-40 mt-40" alt="" id="image">  
     -->
-    <header class="bg-[#2094FFC4] w-full h-[80px] flex flex-row gap-20" id="header">
+    <header class="bg-[#2094FFC4] dark:bg-green-400 w-full h-[80px] flex flex-row lg:justify-around justify-start gap-x-20" id="header">
       <div id="logo">
-        <img class="lg:w-16 w-16 lg:mx-10 mt-3 rounded-md ml-5" src="./assets/NPI%20University%20of%20Bangladesh%20(NPIUB)%20Logo%201-CXZx7kpd.png">
+        <img class="lg:w-16 w-16 lg:mx-10 mt-3 rounded-md ml-5" src="/assets/NPI%20University%20of%20Bangladesh%20(NPIUB)%20Logo%201-CXZx7kpd.png">
       </div>
       <div id="htext">
-        <h1 class="lg:text-3xl lg:mx-20 hidden lg:text-center text-[20px] md:text-[25px] md:mt-4 font-bold text-white  lg:flex">North Pacific International University of Bangladesh</h1>
-        <h1 class="lg:text-3xl lg:mx-20  lg:text-center text-4xl md:text-[25px] mt-5 md:mt-4 font-bold text-white  lg:hidden">NPIUB</h1>
+        <h1 class="lg:text-3xl lg:mx-20 hidden lg:text-center text-xl md:text-2xl md:mt-4 font-bold text-white md:flex">North Pacific International University of Bangladesh</h1>
+        <h1 class="lg:text-3xl lg:mx-20 flex  lg:text-center text-4xl md:text-[25px] mt-5 md:mt-4 font-bold text-white  md:hidden">NPIUB</h1>
       </div>
       <div class="lg:flex flex-col hidden">
         <input type="color" class="w-10 h-5 mr-5 mt-5 border-2" id="col-picker">
@@ -56,22 +55,22 @@
 
     </header>
 
-    <section class="flex flex-col lg:flex-row lg:gap-52 md:flex-row md:gap-20 mx-auto">
+    <section class="flex flex-col lg:flex-row lg:gap-52 md:flex-col md:gap-20 mx-auto">
     
-    <div class="bg-[#75A4FF29] w-full h-40 md:w-[252px] md:h-[644px] rounded-md lg:mt-10 lg:ml-20 md:mt-10">
-       <p class="text-[#2094FFE3] text-center text-[20px] font-arial mt-2 font-semibold">Service Sector</p>
-       <div class="flex flex-row gap-10 justify-around mt-12 md:flex-col md:gap-5">
+    <div class="bg-[#75A4FF29] w-full h-40 lg:w-[252px] lg:h-[644px] rounded-md lg:mt-10 lg:ml-20 md:mt-10">
+       <p class="text-[#2094FFE3] dark:text-[#ECF5FD] text-center text-[20px] font-arial mt-2 font-semibold">Service Sector</p>
+       <div class="flex flex-row gap-10 justify-around mt-12 lg:flex-col lg:gap-5">
         <button id="int-btn" class="category-button bg-green-400 lg:w-48 w-40 h-10 rounded-md mx-auto text-[#003C74] font-semibold  hover:bg-gray-200 drop-shadow-md text-center" data-category="internals">Forms For Internals</button>
         <button id="std-btn" class="category-button bg-blue-200 lg:w-48 w-40 h-10 rounded-md mx-auto text-[#003C74] font-semibold hover:bg-gray-200 drop-shadow-md text-center" data-category="students">Forms For Students</button>
        </div>
     </div>
 
-    <div class="bg-[#75A4FF29] w-full md:w-[586px] h-min-96 mt-10 rounded-[12px] flex flex-col">
+    <div class="bg-[#75A4FF29] w-full lg:w-[586px] h-full pb-20 lg:mt-10 rounded-[12px] flex flex-col">
       <div class="flex flex-row justify-between mx-5 mt-2">
-        <h1 class="text-[#2094FFE3] font-bold ">Service By Service Sector</h1>
+        <h1 class="text-[#2094FFE3] dark:text-[#ECF5FD] font-bold ">Service By Service Sector</h1>
         <div id="arrow" class="flex flex-row gap-2">
-          <i id="arrow1" class="fa fa-arrow-circle-o-left text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
-          <i id="arrow2" class="fa fa-arrow-circle-o-right text-xl text-[#001D82] bg-[#53ADFF40] rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
+          <i id="arrow1" class="fa fa-arrow-circle-o-left text-xl text-[#001D82] bg-[#53ADFF40] dark:text-[#ECF5FD] dark:hover:text-green-900 rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
+          <i id="arrow2" class="fa fa-arrow-circle-o-right text-xl text-[#001D82] bg-[#53ADFF40] dark:text-[#ECF5FD] dark:hover:text-green-900 rounded-full cursor-pointer font-bold hover:bg-gray-300" aria-hidden="true"></i>
         </div>
 
 
@@ -88,7 +87,7 @@
           
         </div>
         <div class="bg-[#D6DCE0] flex mt-5 p-1 justify-center w-full mx-auto">
-          <h1 id="formName" class="capitalize text-[#021145] font-bold text-2xl">Forms For Students</h1>
+          <h1 id="formName" class="capitalize  text-[#021145] font-bold text-2xl">Forms For Students</h1>
         </div>
 
         <div class="flex flex-row justify-between bg-gray-400 w-full mx-auto mt-2 p-1">
@@ -132,8 +131,6 @@
   
     </section>
 
-    <script src="https://kit.fontawesome.com/e111a57329.js" crossorigin="anonymous"></script>
-
-
+    <script src="https://kit.fontawesome.com/e111a57329.js" crossorigin="anonymous"></script>
 </body>
 </html>
